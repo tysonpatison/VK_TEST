@@ -4,7 +4,7 @@ import subprocess
 
 
 url = 'https://drive.usercontent.google.com/download?id=1IGENwFzLm8bBEboISadYSNEdxbnjz1fH&export=download&authuser=0&' \
-      'confirm=t&uuid=1fe48ea0-308e-4791-93c8-1de106915742&at=APZUnTWR6HRyE32sLM6OUmQzg7f6%3A1713624544283'
+      'confirm=t'
 
 file_name = 'settings.reg'
 
