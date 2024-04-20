@@ -10,13 +10,13 @@ file_name = 'settings.reg'
 
 def find_game_directory(path, target_directory):
     for root, dirs, files in os.walk(path):
-        if target_directory in dirs:  # Ищем нужную директорию
+        if target_directory in dirs:
             game_directory = os.path.join(root, target_directory)
             return game_directory
 
     raise FileNotFoundError
 
-def exec_file(href: str):
+def execute_game(href: str):
     subprocess.Popen(href)
 
 def download_file(url:str, file_name: str):
@@ -35,7 +35,7 @@ def main():
     os.chdir(directory)
     download_file(url, file_name)
     add_to_register(file_name)
-    exec_file('Goose Goose Duck.exe')
+    execute_game('Goose Goose Duck.exe')
 
 
 if __name__ == '__main__':
